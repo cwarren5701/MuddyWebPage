@@ -1,0 +1,38 @@
+@page "/aboutjosh"
+
+<PageTitle>AboutJosh</PageTitle>
+
+<MudText Typo="Typo.h3">About Josh</MudText>
+<MudText Typo="Typo.h6">Let's learn more about Josh!</MudText>
+
+
+<MudCarousel Class="mud-width-full" Style="height:100px;" ShowArrows="@arrows" ShowBullets="@bullets" AutoCycle="false" TData="object">
+    <MudCarouselItem Transition="transition" Color="@Color.Primary">
+        <div class="d-flex align-center" style="height:100%">
+            <MudText Typo="Typo.h4">Background</MudText>
+        </div>
+    </MudCarouselItem>
+    <MudCarouselItem Transition="transition" Color="@Color.Secondary">
+        <div class="d-flex" style="height:100%">
+
+        </div>
+    </MudCarouselItem>
+    <MudCarouselItem Transition="transition" Color="@Color.Info">
+        <div class="d-flex" style="height:100%">
+
+        </div>
+    </MudCarouselItem>
+</MudCarousel>
+
+<MudText Typo="Typo.body1">My name is Joshua Thomas and I am from Redondo Beach, California. 
+I am 17 years old and starting coding my Sophomore year in high school. Mx. Collard has been my teacher 
+for 2 years now as I enter my final year of high school. Outside of my academics at Chadwick, I am an avid 
+runner and have a goal of running Division 1 Cross Country and Track. </MudText>
+<MudCardMedia Image="images/rb.jpeg" Height="400" />
+
+
+@code{ 
+    private bool arrows = true;
+    private bool bullets = true;
+    private Transition transition = Transition.Slide;
+}
